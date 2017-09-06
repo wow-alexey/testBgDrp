@@ -1,6 +1,5 @@
 @import "custom";
 @import "fonts";
-@import "layout";
 @import "reset";
 @import "default-class";
 
@@ -62,8 +61,8 @@ header {
         }
         .about {
           position: relative;
-          &:hover{
-            ul{
+          &:hover {
+            ul {
               opacity: 1;
             }
           }
@@ -77,13 +76,13 @@ header {
             z-index: 99999;
             padding: 0 25px;
             border-top: 1px solid $yellowColor;
-            opacity:0;
+            opacity: 0;
             transition: opacity .3s ease-in-out;
             -webkit-transition: opacity .3s ease-in-out;
-            li{
+            li {
               margin: 0 auto;
               padding: 18px 0;
-              a{
+              a {
                 padding: 0 0;
               }
             }
@@ -342,7 +341,8 @@ footer {
     background-color: #ffffff;
     box-shadow: 0 0 7.6px 0.4px rgba(17, 20, 48, 0.11);
     width: 769px;
-    left: 20%;
+    left: 50%;
+    margin-left: -384.5px;
     top: 11%;
     height: 512px;
     display: flex;
@@ -449,7 +449,6 @@ footer {
     padding: 0 0 26px 45px;
     position: relative;
     margin-top: 205px;
-
     background-image: url("../img/icons/search.svg");
     background-repeat: no-repeat;
     -ms-background-position-y: 13px;
@@ -470,10 +469,14 @@ footer {
     &:-ms-input-placeholder {
       color: #c2c2c2;
     }
-
   }
-
 }
+
+.slicknav_menu{
+  display: none;
+}
+
+@import "layout";
 
 
 

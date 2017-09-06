@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TestPage</title>
 
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CWork+Sans:300,400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -41,7 +43,7 @@
         <img src="img/logo.svg" alt="logo">
     </div>
     <div class="navigation">
-        <nav class="uppercase">
+        <nav class="uppercase" id="nav">
             <ul>
                 <li id="arrow" class="about">About
                     <ul>
@@ -211,7 +213,7 @@
                     <li><a href="#">Guides</a></li>
                     <li><a href="#">Community</a></li>
                     <li><a href="#">Resources</a></li>
-                    <li><a href="#">Contuct us</a></li>
+                    <li class="contactUs"><a>Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -232,11 +234,15 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-<script src="js/libs.min.js"></script>
+<!--<script src="js/libs.min.js"></script>-->
 
 <!--all js init-->
 <script src="js/main.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"></script>
+
+
+<script src="js/libs.min.js"></script>
 
 
 </body>

@@ -8,3 +8,8 @@ $(document).ready(function(){
         cssEase: 'linear'
     });
 });
+$(function(){
+    $('#nav').slicknav({
+        prependTo:	"header"
+    });
+});
