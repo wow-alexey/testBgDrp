@@ -10,6 +10,9 @@ $(document).ready(function(){
 });
 $(function(){
     $('#nav').slicknav({
-        prependTo:	"header"
+        prependTo:	"header",
+        allowParentLinks:	true,
+        removeIds: false
+
     });
 });

@@ -15,7 +15,7 @@
     justify-content: normal;
     margin-top: 4%;
     .post {
-      max-width: 63%;
+      max-width: 80%;
       & + .post {
         margin-top: 3%;
       }
@@ -25,7 +25,7 @@
 
 @media (max-width: 955px) {
   header {
-    padding: 1.5%;
+    padding: 15px;
   }
   nav {
     display: none;
@@ -44,11 +44,10 @@
     font-size: 1.5em;
 
     .slicknav_btn {
-      margin: 0;
+      margin-right: 50%;
       padding: 0;
       outline: none;
       background: none;
-      float: left;
     }
     .slicknav_menutxt {
       display: none;
@@ -84,20 +83,12 @@
     padding-right: 5%;
   }
   main {
-    padding-top: 6.4%;
-    .full-height {
-      .corusel-img img {
-        height: calc(100vh - 60px);
-      }
-      .corusel-content {
-        height: calc(100vh - 6.4%);
-      }
-    }
-    .informationBlock {
+    article {
       padding: 4% 0 4% 0;
     }
     .container {
-      max-width: 60%;
+      max-width: 100%;
+      padding: 0 15px;
       line-height: 1.3;
       h3 {
         margin-bottom: 2%;
@@ -129,12 +120,11 @@
       }
     }
     .latest {
-      padding-top: 4%;
-      padding-bottom: 4%;
+      padding: 4% 0 4% 0;
     }
   }
   footer {
-    .footerInfo {
+    .navigation {
       justify-content: center;
       margin-top: 2%;
     }
@@ -144,10 +134,10 @@
       font-size: 1em;
     }
   }
-  header .navigation .search:before {
+  header .mainMenu .search:before {
     display: none;
   }
-  header .navigation .search {
+  header .mainMenu .search {
     margin-left: 0;
   }
   .overlay .popup {
@@ -184,6 +174,12 @@
 
     }
   }
+  .strong{
+    order: 1;
+  }
+  .mainMenu{
+    order: 3;
+  }
 }
 
 @media (max-width: 700px) {
@@ -195,24 +191,22 @@
       font-size: 1.2em;
     }
     h6 {
-      font-size: 5em;
+      font-size: 3em;
+      margin-top: 3%;
     }
   }
-  main .full-height .corusel-img img {
-    height: calc(100vh - 25px);
-  }
-  main .container p.firstPara {
+
+  main .container p .special {
     font-size: 1.1em;
   }
   main .container p {
-    font-size: 1em;
     letter-spacing: normal;
   }
   main .container h3 {
     font-size: 1.5em;
   }
   main .container blockquote p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.5;
     margin-bottom: 0;
     letter-spacing: 0;
@@ -223,7 +217,7 @@
   main .latest .postBlock .post img {
     max-height: 130px;
   }
-  main .latest .postBlock .post .description p {
+  main .latest .postBlock .post .description h4 {
     font-size: 1.2em;
     line-height: 1.3;
   }
@@ -235,10 +229,11 @@
 @media (max-width: 631px) {
   main table tr:nth-child(1) th {
     padding: 2% 0 2% 1%;
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   main table tr td {
     padding: 2% 0 2% 1%;
+    font-size: 1.3em;
   }
   header .logo {
     width: 14%;
@@ -252,7 +247,7 @@
   main .latest .postBlock .post .description {
     padding: 3% 1.2% 2% 5%;
   }
-  header .navigation .search {
+  header .mainMenu .search {
     width: 14px;
     height: 14px;
   }
@@ -305,17 +300,5 @@
   .overlay .popup .formBlock form button{
     width: 60%;
     height: 25px;
-  }
-}
-
-@media (max-width: 390px) {
-  body {
-    font-size: 0.35em;
-  }
-  main .full-height .corusel-img img {
-    height: calc(100vh - 15px);
-  }
-  header .logo {
-    width: 25%;
   }
 }

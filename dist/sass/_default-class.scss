@@ -10,11 +10,6 @@ header, main, footer {
   box-sizing: border-box;
 }
 
-.wrap {
-  padding-left: 55px;
-  padding-right: 55px;
-}
-
 .corusel {
   color: #fefefe;
   span {
@@ -31,6 +26,7 @@ header, main, footer {
 }
 
 nav {
+  text-transform: uppercase;
   ul{
     li {
       display: inline-block;
